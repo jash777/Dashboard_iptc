@@ -458,3 +458,8 @@ INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
 INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '70', 'source_ip': ''}}
 ERROR:root:Error response from agent: 500
 INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:21:27] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '70', 'source_ip': '192.168.1.64'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '70', 'source_ip': '192.168.1.64'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:27:23] "POST /inbound-rules HTTP/1.1" 200 -
