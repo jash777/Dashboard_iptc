@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+<div class="container mt-5">
+    <h1>Select an Agent</h1>
+    <br>
+    <form id="agent-form">
+        <div class="form-group">
+            <select class="form-control" name="agent_ip" id="agent_ip">
+                {% for option in agent_options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <button type="button" class="btn btn-primary" id="select-agent-btn">Select Agent</button>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-5">
+    <h1> Rules  Table</h1> <br>
+    
+    <!-- Inbound Rules Section -->
+    <h2>Inbound Rules</h2><br>
+    <form id="inbound-rule-form">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Protocol</th>
+                    <th>Port</th>
+                    <th>Source IP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select class="form-control" name="inbound_protocol">
+                            <option value="tcp">TCP</option>
+                            <option value="udp">UDP</option>
+                            <option value="icmp">ICMP</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="inbound_port" placeholder="Port">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="inbound_source_ip" placeholder="Source IP">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" id="apply-inbound-rule-btn">Apply Inbound Rule</button>
+    </form>
+    <br>
+    <div id="inbound-response-message" class="mt-3"></div>
+
+    <!-- Outbound Rules Section -->
+<h2>Outbound Rules</h2><br>
+<form id="outbound-rule-form">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Protocol</th>
+                <th>Port</th>
+                <th>Destination IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <select class="form-control" name="outbound_protocol">
+                        <option value="tcp">TCP</option>
+                        <option value="udp">UDP</option>
+                        <option value="icmp">ICMP</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="form-control" name="outbound_port" placeholder="Port">
+                </td>
+                <td>
+                    <input type="text" class="form-control" name="outbound_destination_ip" placeholder="Destination IP">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary" id="apply-outbound-rule-btn">Apply Outbound Rule</button>
+</form>
+<br>
+
+
+<div id="outbound-response-message" class="mt-3"></div>
+
+
+
+<script>
+    $(document).ready(function() {
+    $("#apply-inbound-rule-btn").click(function() {
+        var formData = {
+            inbound_rule: {
+                protocol: $("select[name='inbound_protocol']").val(),
+                port: $("input[name='inbound_port']").val(),
+                source_ip: $("input[name='inbound_source_ip']").val()
+            }
+        };
+
+        $.ajax({
+            url: '/inbound-rules',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(formData),
+            success: function(response) {
+                // Handle success response for inbound rules
+                $("#inbound-response-message").html('<div class="alertsuccess" role="alert">Inbound rule added successfully!</div>');
+                console.log(response);
+            },
+            error: function(xhr, status, error) {
+                // Handle error response for inbound rules
+                $("#inbound-response-message").html('<div class="alert alert-danger" role="alert">Error: ' + xhr.responseText + '</div>');
+                console.error(xhr.responseText);
+            }
+        });
+    });
+
+    $("#apply-outbound-rule-btn").click(function() {
+        var formData = {
+            outbound_rule: {
+                protocol: $("select[name='outbound_protocol']").val(),
+                port: $("input[name='outbound_port']").val(),
+                destination_ip: $("input[name='outbound_destination_ip']").val()
+            }
+        };
+
+        $.ajax({
+            url: '/outbound-rules',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(formData),
+            success: function(response) {
+                // Handle success response for outbound rules
+                $("#outbound-response-message").html('<div class="alertsuccess" role="alert">Outbound rule added successfully!</div>');
+                console.log(response);
+            },
+            error: function(xhr, status, error) {
+                // Handle error response for outbound rules
+                $("#outbound-response-message").html('<div class="alert alert-danger" role="alert">Error: ' + xhr.responseText + '</div>');
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
+
+
+function showSelectedIP() {
+    var selectElement = document.getElementById("agent_ip");
+    var selectedIP = selectElement.options[selectElement.selectedIndex].text;
+    alert("Selected IP address: " + selectedIP);
+}
+
+
+
+// $(document).ready(function() {
+//     $("#select-agent-btn").click(function() {
+//         var selectedAgent = $("#agent_ip").val();
+//         if (selectedAgent) {
+//             alert("Agent selected: " + selectedAgent);
+//         } else {
+//             alert("Please select an agent.");
+//             return;
+//         }
+//     });
+// });
+
+
+// $(document).ready(function() {
+//     $("#select-agent-btn").click(function() {
+//         var selectedAgent = $("#agent_ip").val();
+//         if (selectedAgent) {
+//             $.ajax({
+//                 url: '/select_agent',
+//                 type: 'POST',
+//                 data: { agent_ip: selectedAgent },
+//                 success: function(response) {
+//                     // Handle success response
+//                     alert("Agent selected: " + selectedAgent);
+//                     // Reload the page to reflect the updated agent selection
+//                     location.reload();
+//                 },
+//                 error: function(xhr, status, error) {
+//                     // Handle error response
+//                     alert("Error selecting agent: " + xhr.responseText);
+//                 }
+//             });
+//         } else {
+//             alert("Please select an agent.");
+//         }
+//     });
+// });
+
+
+$(document).ready(function() {
+    $("#select-agent-btn").click(function() {
+        var selectedAgent = $("#agent_ip").val();
+        if (selectedAgent) {
+            $.ajax({
+                url: '/select_agent',
+                type: 'POST',
+                data: { agent_ip: selectedAgent },
+                success: function(response) {
+                    // Handle success response
+                    alert("Agent selected: " + selectedAgent);
+                    // Update the selected option in the dropdown menu
+                    $("#agent_ip").find("option[value='" + selectedAgent + "']").prop("selected", true);
+                },
+                error: function(xhr, status, error) {
+                    // Handle error response
+                    alert("Error selecting agent: " + xhr.responseText);
+                }
+            });
+        } else {
+            alert("Please select an agent.");
+        }
+    });
+});
+
+
+</script>
+
+</body>
+</html>

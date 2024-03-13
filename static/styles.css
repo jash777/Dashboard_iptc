@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.alert{
+    background-color:rgba(255, 0, 0, 0.247);
+    color: #ccc;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+
+
+}
+
+.alertsuccess{
+    background-color:rgba(0, 255, 157, 0.247);
+    color: #ccc;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Semi-transparent black */
+    border-bottom: 2px solid rgba(44, 82, 130, 0.8); /* Semi-transparent darker shade */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #fff !important; /* Navbar brand color */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd !important; /* Navbar link color */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important; /* Navbar link hover color */
+}
+
+.resp {
+    background-color: transparent;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff; /* Default text color */
+    
+}
+/* Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White shadow */
+}
+
+/* Background Image */
+/* Background Image */
+body {
+    background-color: #000; /* Black background color */
+    font-family: 'Orbitron', sans-serif;
+    color: #ddd; /* Default text color */
+    background-image: url('./1316137.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Set a minimum height to cover the viewport */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;/* Heading text color */
+    position: relative;
+    text-align: center;
+}
+tr ,td {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+color: white;/* Heading text color */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White text shadow */
+    position: relative;
+    text-align: center;
+}
+
+/* Paragraph Styles */
+p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc; /* Paragraph text color */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: rgba(44, 82, 130, 0.8) !important; /* Semi-transparent darker shade */
+    border-color: rgba(44, 82, 130, 0.8) !important; /* Semi-transparent darker shade */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+}
+
+.btn-primary:hover {
+    background-color: rgba(44, 82, 130, 1) !important; /* Darker shade */
+    border-color: rgba(44, 82, 130, 1) !important; /* Darker shade */
+    color: white;/* White text color */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4); /* Stronger white box shadow on hover */
+}
+
+/* View Section */
+
+
+#view-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: transparent;/* Heading text color */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White text shadow */
+}
+
+#view-section .list-group-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: none;
+    color: #ffffff; /* Text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition on hover */
+}
+
+#view-section .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter background on hover */
+    color: transparent;/* White text color on hover */
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* White border */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: transparent;/* White text color */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* White border */
+}
+
+.card-body {
+    padding: 20px;
+    color: #ccc; /* Light gray text color */
+}
+
+/* Additional Styles */
+/* Add your custom styles here */
