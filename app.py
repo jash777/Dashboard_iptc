@@ -16,6 +16,7 @@ socketio = SocketIO(app)
 client = MongoClient('mongodb://localhost:27017/') 
 db = client['agents']
 agents_collection = db['agents']
+agents_collections = db['agents_collection']
 db = client['iptables_db']
 rules_collection = db['rules']
 
@@ -32,26 +33,6 @@ def index():
         logger.error("An error occurred: %s", str(e))
         return "An error occurred while loading the page."
     
-# @app.route('/select_agent', methods=['POST'])
-# def select_agent():
-#     try:
-#         selected_value = request.form.get('agent_ip')
-#         selected_ip = selected_value.split(' - ')[0] if selected_value else None
-
-#         if selected_ip:
-#             session['AGENT_URL'] = f'http://{selected_ip}:5000'
-#             logger.info("Selected agent is %s", session['AGENT_URL'])
-
-#             # Save agent info to MongoDB
-#             agent_data = {'ip': selected_ip, 'name': selected_value.split(' - ')[1]}
-#             agents_collection.insert_one(agent_data)
-
-#             return redirect(url_for('index'))
-#         else:
-#             return "Invalid selection of agent."
-#     except Exception as e:
-#         logger.error("An error occurred while selecting agent: %s", str(e))
-#         return "An error occurred while selecting agent."
 
 @app.route('/select_agent', methods=['POST'])
 def select_agent():
@@ -138,6 +119,58 @@ def apply_outbound_rule():
     except Exception as e:
         logger.error("An unexpected error occurred while applying inbound rule: %s", str(e))
         return jsonify({'error': 'An unexpected error occurred'}), 500
+
+@app.route('/block_port', methods=['GET', 'POST'])
+def block_port():
+    if request.method == 'POST':
+        try:
+            port = request.form.get('portNumber')
+            if not port:
+                return jsonify({'error': 'Port number is required'}), 400
+
+            payload = {'port': port}
+            response = requests.post(f'{session.get("AGENT_URL")}/block_port', json=payload)
+
+            if response.status_code == 200:
+                return jsonify({'message': f'Port {port} blocked successfully'}), 200
+            else:
+                return jsonify({'error': response.text}), response.status_code
+        except Exception as e:
+            logger.error("An error occurred while blocking port: %s", str(e))
+            return jsonify({'error': 'An error occurred while blocking port.'}), 500
+    elif request.method == 'GET':
+        return render_template('block_port.html')
+
+@app.route('/add_agent')
+def add_ageents():
+    agents = agents_collections.find()
+    return render_template('add_agent.html', agents=agents)
+
+@app.route('/add', methods=['POST','GET'])
+def add_agent():
+    try:
+        agent_id = request.form.get('agent_id')
+        agent_name = request.form.get('agent_name')
+        status = request.form.get('status')
+        ip_address = request.form.get('ip_address')
+        
+        if agent_id is None or agent_name is None or status is None or ip_address is None:
+            # Handle case where required fields are missing
+            return 'Missing required fields', 400
+        
+        # Add the new field to the document
+        agents_collections.insert_one({'agent_id': agent_id, 'agent_name': agent_name, 'status': status, 'ip_address': ip_address})
+        
+        return redirect(url_for('add_agent'))
+    except Exception as e:
+        return str(e), 400
+
+
+
+@app.route('/rule_manager',methods=['POST','GET'])
+def rule_manager():
+    return render_template('manage_rules.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True,port=5070)

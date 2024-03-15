@@ -1,465 +1,390 @@
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5070
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:12] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:12] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:12] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:12] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:16] "GET /static/1316137.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:56] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:56] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:52:56] "[33mGET /scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:13] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:13] "[33mGET /script.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:13] "[33mGET /script.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:15] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:53:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:48] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:48] "[33mGET /static/scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:48] "[33mGET /static/scripts.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:55:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:03] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:03] "GET /static/script.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:03] "GET /static/script.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:05] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:55] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:55] "GET /static/script.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:55] "GET /static/script.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:57] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:56:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:12] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:14] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:50] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:57:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.6'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.6'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:58:03] "POST /apply-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:58:47] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:58:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:58:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:58:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:19] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:21] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:34] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:36] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:38] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:50] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 15:59:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:00:41] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:00:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:00:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:01] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:20] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:01:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:04:53] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:04:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:04:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:05:09] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:07:57] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:07:57] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:07:59] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:07:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:00] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:30] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:30] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:32] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:08:34] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:09:09] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:09:09] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:09:11] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:09:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:09:18] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:10:28] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:10:28] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:10:30] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:10:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:10:36] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:06] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:06] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:08] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:10] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:44] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:44] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:46] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:11:47] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:12:19] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:12:19] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:12:21] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:12:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:12:22] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:10] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:13] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:14] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:14] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:14] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:15] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:18] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:19] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:22] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:36] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:38] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:39] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:41] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:44] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:45] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:47] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:13:54] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:43] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:45] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:48] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:15:50] "[33mPOST /outbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:16:03] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:16:11] "[33mPOST /inbound-rules HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5070
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:17:55] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:17:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:17:57] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:17:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.0'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:09] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:45] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:47] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '', 'source_ip': ''}}
-ERROR:__main__:Error occurred while sending request to agent server: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:18:51] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.6'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.6'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000201496245F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:09] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.6'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.6'}}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:17] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020149E39250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:18] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:19] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.3'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.3'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020149DECF50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:19:32] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.3'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.3'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:02] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.6'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.6'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:12] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.2'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.16.2'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:46] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:56] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:20:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '33', 'source_ip': '192.168.2.69'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '33', 'source_ip': '192.168.2.69'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:21:09] "POST /inbound-rules HTTP/1.1" 200 -
+ERROR:__main__:An error occurred while blocking port: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /block_port (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB6A462420>: Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host'))
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:24:07] "[35m[1mPOST /block_port HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:27:31] "[33mPOST /block_port HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:29:19] "POST /block_port HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:40:45] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:40:45] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:40:50] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:40:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '', 'source_ip': ''}}
-ERROR:__main__:Error occurred while sending request to agent server: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:40:55] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AFA242BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:09] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '78', 'source_ip': '192.168.1.0'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8E842C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:27] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:27] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AFA241070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8E84BF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8E86090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8E87020>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8CFC4A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:29] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '88', 'source_ip': '192.168.1.36'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '88', 'source_ip': '192.168.1.36'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /inbound_rule (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028AF8CFDEE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:41:41] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '88', 'source_ip': '192.168.1.36'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '88', 'source_ip': '192.168.1.36'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:15] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:19] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:21] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.65'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.1.65'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:42:30] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:53] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:55] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://192.168.1.15:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:57] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:57] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:58] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:43:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.3.6'}
-INFO:__main__:Sending request to AGENT_URL: http://192.168.1.15:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.3.6'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='192.168.1.15', port=5000): Max retries exceeded with url: /inbound_rule (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000028AF8E842C0>, 'Connection to 192.168.1.15 timed out. (connect timeout=None)'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:28] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "[35m[1mGET /add_agent HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "GET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:37] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:39] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:40] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:42] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:43] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:18] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:19] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:46] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:47] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:50] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:16] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:31] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:15] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:32] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:34] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:37] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:53] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:17] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:17] "[31m[1mGET /add HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:16] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:16] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:51] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:10] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:12] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:47] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:27] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:29] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:31] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:32] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:41] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:42] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:01] "[35m[1mGET /rule_manager HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:02] "GET /rule_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:02] "GET /rule_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "GET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "[36mGET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "[36mGET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:21] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:53] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:54] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:05] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:15] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:17] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:18] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:19] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:20] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:09] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:11] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 INFO:__main__:Selected agent is http://144.91.66.203:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:32] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:32] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:33] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:36] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '699', 'source_ip': '192.168.1.36'}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:23] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:23] "GET / HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}
 INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '699', 'source_ip': '192.168.1.36'}}
+INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}}
+ERROR:root:Error response from agent: 404
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:33] "[35m[1mPOST /outbound-rules HTTP/1.1[0m" 500 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.56'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.56'}}
 INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:44:56] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:39] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:41] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://192.168.1.15:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:47] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:47] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:48] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:50] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:46:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:22] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:24] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://192.168.1.20:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:27] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:27] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.10.0'}
-INFO:__main__:Sending request to AGENT_URL: http://192.168.1.20:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '56', 'source_ip': '192.168.10.0'}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='192.168.1.20', port=5000): Max retries exceeded with url: /inbound_rule (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000028AF8E85610>, 'Connection to 192.168.1.20 timed out. (connect timeout=None)'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:47:57] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:36] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:37] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:39] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://192.168.1.15:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:44] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:48:44] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://192.168.1.15:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '', 'source_ip': ''}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='192.168.1.15', port=5000): Max retries exceeded with url: /inbound_rule (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000028AF8E84AD0>, 'Connection to 192.168.1.15 timed out. (connect timeout=None)'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:49:07] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:50:13] "[33mGET /add_agent HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:50:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '669', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://192.168.1.15:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '669', 'source_ip': ''}}
-ERROR:__main__:Error occurred while sending request to agent server: HTTPConnectionPool(host='192.168.1.15', port=5000): Max retries exceeded with url: /inbound_rule (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000028AFA242750>, 'Connection to 192.168.1.15 timed out. (connect timeout=None)'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:50:52] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Selected agent is http://144.91.66.203:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:50:58] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:50:58] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '669', 'source_ip': ''}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:48] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '0.0.0.0'}
 INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '669', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:09] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:41] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:46] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://144.91.66.203:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:49] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:49] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '694', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '694', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:51:54] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '694', 'source_ip': '192.168.1.65'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '694', 'source_ip': '192.168.1.65'}}
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '0.0.0.0'}}
 INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:52:41] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6946', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6946', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:57:04] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6946', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6946', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:58:41] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6945', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6945', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 16:58:52] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6945', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6945', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:01:21] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6942', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6942', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:01:31] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6942', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6942', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:04:05] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:04:15] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:07:06] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:08:07] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '6943', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:14:14] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '694', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '694', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:14:27] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:03] "POST /inbound-rules HTTP/1.1" 200 -
 INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': ''}
 INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
 INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': ''}}
 ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:17:19] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': ''}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:08] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.12.7'}
 INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:21:14] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '70', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '70', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:21:27] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '70', 'source_ip': '192.168.1.64'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '70', 'source_ip': '192.168.1.64'}}
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.12.7'}}
 INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 17:27:23] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:44] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:13:33] "POST /outbound-rules HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.25'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.25'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:43:19] "POST /outbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:22] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:32] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:56] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:56] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:00] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:40] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:41] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:15] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:16] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:19] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:36] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:37] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:38] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:14:59] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:14:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:17] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:17] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:18] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:06] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:06] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:07] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:14] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:14] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:15] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:41] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:41] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:42] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:48] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:48] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:57] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:57] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:05] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:05] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:06] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:06] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:07] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:07] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:18] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:18] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:23] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:25] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:31] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:31] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:55] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:55] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:02] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:02] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:05] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:05] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:10] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:10] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:30] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:30] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:35] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:36] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:26] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:27] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:37] "[32mPOST /add HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:37] "[31m[1mGET /add HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:42] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:19] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:25] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:26] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:27] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:28] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:30] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:31] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:32] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:33] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

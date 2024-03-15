@@ -90,13 +90,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     text-align: center;
 }
-tr ,td {
+tr ,td ,th {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-color: white;/* Heading text color */
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* White text shadow */
     position: relative;
     text-align: center;
+    background-color: transparent;
+        
 }
 
 /* Paragraph Styles */
@@ -167,5 +167,17 @@ p {
     color: #ccc; /* Light gray text color */
 }
 
-/* Additional Styles */
-/* Add your custom styles here */
+
+.agent-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .agent-table th,
+  .agent-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .agent-table th {
+    background-color: #f2f2f2;
+  }

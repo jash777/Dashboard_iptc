@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Add custom CSS styles here */
+        #addAgentForm button {
+            margin-top: 20px;
+        }
+
+        #alertContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+ 
+    <div class="container mt-5">
+        <h1 class="display-4">AGENT MANAGEMENT</h1>
+        <form id="addAgentForm">
+            <div class="form-group">
+                <label for="agentId">Agent ID</label>
+                <input type="text" class="form-control" id="agentId" name="agent_id" placeholder="Enter Agent ID">
+            </div>
+            <div class="form-group">
+                <label for="agentName">Agent Name</label>
+                <input type="text" class="form-control" id="agentName" name="agent_name" placeholder="Enter Agent Name">
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" id="status" name="status" placeholder="Enter Status">
+            </div>
+            <div class="form-group">
+                <label for="ipAddress">IP Address</label>
+                <input type="text" class="form-control" id="ipAddress" name="ip_address" placeholder="Enter IP Address">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Agent</button>
+        </form>
+        <div id="alertContainer"></div>
+
+        <!-- Agents Table -->
+        <div class="container mt-5">
+            <h2 class="mt-5">AGENTS</h2><br>
+            <div id="view-section">
+                <table class="table agent-table">
+                    <thead>
+                        <tr>
+                            <th>Agent ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>IP Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for agent in agents %}
+                        <tr>
+                            <td>{{ agent.agent_id }}</td>
+                            <td>{{ agent.agent_name }}</td>
+                            <td>{{ agent.status }}</td>
+                            <td>{{ agent.ip_address }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#addAgentForm').submit(function (event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+
+                // Serialize form data
+                var formData = $(this).serialize();
+
+                // AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: '/add',
+                    data: formData,
+                    success: function (response) {
+                        // Clear form fields
+                        $('#addAgentForm')[0].reset();
+
+                        // Show success alert
+                        $('#alertContainer').html('<div class="alert alert-success" role="alert">Agent added successfully!</div>');
+                    },
+                    error: function (xhr, status, error) {
+                        // Show error alert
+                        $('#alertContainer').html('<div class="alert alert-danger" role="alert">Error: ' + xhr.responseText + '</div>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
