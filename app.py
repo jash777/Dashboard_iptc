@@ -173,4 +173,5 @@ def rule_manager():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5070)
+    # Remove the `app.run()` line
+    pass

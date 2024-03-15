@@ -388,3 +388,46 @@ INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:33] "[33mGET /flush_rules HTTP/1
 INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5070
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-940-552
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:28] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:31] "GET /static/1316137.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:__main__:Selected agent is http://144.91.66.203:5000
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:42] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:42] "GET / HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '66', 'source_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '66', 'source_ip': '0.0.0.0'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:00] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '70', 'destination_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '70', 'destination_ip': '0.0.0.0'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:16] "POST /outbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:18] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:23] "POST /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:25] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:26] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:28] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:31] "[33mGET /show_rules HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:34] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
