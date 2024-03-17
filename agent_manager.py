@@ -1,11 +1,35 @@
 from pymongo import MongoClient
+from urllib.parse import quote_plus
 
 class AgentManager:
     def __init__(self):
-        self.client = MongoClient('mongodb://localhost:27017/')
-        self.db = self.client['agents_manager']  # Replace 'your_database_name' with your actual database name
-        self.agents_collection = self.db['agents']  # Collection to store server agent IPs
+        # Encode the username and password
+        username = "alpha"
+        password = "Alpha#Jash@777"
+        encoded_username = quote_plus(username)
+        encoded_password = quote_plus(password)
 
+        # Connect to the MongoDB server using the properly escaped username and password
+        self.client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/")
+        
+        self.db = self.client['agents_manager']
+        self.agents_collections = self.db['agents_collection']
+
+        
+        # Collection to store server agent IPs
+        self.agents_collection = self.db['agents']
 
     def get_agents(self):
         return [agent['ip'] for agent in self.agents_collection.find()]
+
+username = "alpha"
+password = "Alpha#Jash@777"
+encoded_username = quote_plus(username)
+encoded_password = quote_plus(password)
+
+client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/")
+db = client['agents']
+agents_collection = db['agents']
+agents_collections = db['agents_collection']
+db = client['iptables_db']
+rules_collection = db['rules']   

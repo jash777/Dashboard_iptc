@@ -1,13 +1,23 @@
 from pymongo import MongoClient
 import logging
+from urllib.parse import quote_plus
 
-client = MongoClient('mongodb://localhost:27017/') 
+# Encode the username and password
+username = "alpha"
+password = "Alpha#Jash@777"
+encoded_username = quote_plus(username)
+encoded_password = quote_plus(password)
+
+# Connect to the MongoDB server using the properly escaped username and password
+client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/") 
+
+# Replace 'agents' with your actual database name
 db = client['agents']
 agents_collection = db['agents_collection']
 
 def get_agent_ips_and_names():
     try:
-        # Fetch all documents from the 'agents' collection
+        # Fetch all documents from the 'agents_collection' collection
         agents = agents_collection.find()
 
         # Extract the IP addresses and agent names

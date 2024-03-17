@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, session,send_file,make_response
 from flask_socketio import SocketIO, emit
 from rules import *
-from agent_manager import AgentManager
+from agent_manager import *
 from get_available_agents import get_agent_ips_and_names
 import requests
 import logging
@@ -9,18 +9,12 @@ from pymongo import MongoClient
 from bson import ObjectId
 import json
 import os
+from urllib.parse import quote_plus
 
 
 app = Flask(__name__)
 app.secret_key = b'ESANHKD8976DS8DSA$^*&^*&BOH9YWSDF#'
 socketio = SocketIO(app)
-
-client = MongoClient('mongodb://localhost:27017/') 
-db = client['agents']
-agents_collection = db['agents']
-agents_collections = db['agents_collection']
-db = client['iptables_db']
-rules_collection = db['rules']
 
 logging.basicConfig(filename='All_log.log', level=logging.INFO)
 logger = logging.getLogger(__name__)

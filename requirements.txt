@@ -2,3 +2,4 @@ Flask
 flask-socketio
 pymongo
 requests
+python-dotenv
