@@ -1,0 +1,36 @@
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:23] "GET /add_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:26] "GET /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:31] "POST /block_port HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:35] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\agent_manager.py', reloading
+INFO:werkzeug: * Restarting with stat

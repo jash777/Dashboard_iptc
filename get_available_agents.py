@@ -3,13 +3,13 @@ import logging
 from urllib.parse import quote_plus
 
 # Encode the username and password
-username = "alpha"
-password = "Alpha#Jash@777"
+username = "*****"
+password = "*******"
 encoded_username = quote_plus(username)
 encoded_password = quote_plus(password)
 
 # Connect to the MongoDB server using the properly escaped username and password
-client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/") 
+client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@mongodb.server.com/") 
 
 # Replace 'agents' with your actual database name
 db = client['agents']

@@ -4,13 +4,13 @@ from urllib.parse import quote_plus
 class AgentManager:
     def __init__(self):
         # Encode the username and password
-        username = "alpha"
-        password = "Alpha#Jash@777"
+        username = "*****"
+        password = "*******"
         encoded_username = quote_plus(username)
         encoded_password = quote_plus(password)
 
         # Connect to the MongoDB server using the properly escaped username and password
-        self.client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/")
+        self.client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@mongodb.server.com")
         
         self.db = self.client['agents_manager']
         self.agents_collections = self.db['agents_collection']
