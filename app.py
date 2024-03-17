@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for, session
+from flask import Flask, render_template, request, jsonify, redirect, url_for, session,send_file,make_response
 from flask_socketio import SocketIO, emit
 from rules import *
 from agent_manager import AgentManager
@@ -8,6 +8,8 @@ import logging
 from pymongo import MongoClient
 from bson import ObjectId
 import json
+import os
+
 
 app = Flask(__name__)
 app.secret_key = b'ESANHKD8976DS8DSA$^*&^*&BOH9YWSDF#'
@@ -165,6 +167,10 @@ def add_agent():
     except Exception as e:
         return str(e), 400
 
+@app.errorhandler(Exception)
+def handle_error(e):
+    logger.error("An unexpected error occurred: %s", str(e))
+    return jsonify({'error': 'An unexpected error occurred'}), 500
 
 
 @app.route('/rule_manager',methods=['POST','GET'])
@@ -172,6 +178,37 @@ def rule_manager():
     return render_template('manage_rules.html')
 
 
-if __name__ == '__main__':
-    # Remove the `app.run()` line
-    pass
+@app.route('/download_agent',methods=['POST','GET'])
+def download_agent():
+    return  render_template("download_agent.html")
+
+@app.route('/download-file')
+def download_file():
+    try:
+        # Path to the zip file you want to serve for download
+        zip_file_path = './agent_file/agent.tar'
+
+        # Check if the file exists
+        if not os.path.isfile(zip_file_path):
+            return "The requested file does not exist.", 404
+
+        # Provide a filename for the downloaded file (optional)
+        filename = 'agent.tar'
+
+        # Create a Flask response with the file content
+        response = make_response(send_file(zip_file_path, as_attachment=True))
+
+        # Add headers to force download and specify the file type
+        response.headers['Content-Type'] = 'application/octet-stream'
+        response.headers['Content-Disposition'] = f'attachment; filename="{filename}"'
+
+        return response
+
+    except Exception as e:
+        # Log any exceptions that occur
+        logging.error(f"An error occurred while downloading the file: {str(e)}")
+        # Return a custom error response
+        return "An error occurred while downloading the file. Please try again later.", 500
+
+if __name__ == "__main__":
+    app.run(debug=True)

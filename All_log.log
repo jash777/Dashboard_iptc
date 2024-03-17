@@ -1,433 +1,117 @@
-ERROR:__main__:An error occurred while blocking port: HTTPConnectionPool(host='144.91.66.203', port=5000): Max retries exceeded with url: /block_port (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB6A462420>: Failed to establish a new connection: [WinError 10065] A socket operation was attempted to an unreachable host'))
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:24:07] "[35m[1mPOST /block_port HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:27:31] "[33mPOST /block_port HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:29:19] "POST /block_port HTTP/1.1" 200 -
+ERROR:root:An error occurred while downloading the file: send_file() got an unexpected keyword argument 'attachment_filename'
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:56:41] "[35m[1mGET /download-file HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:56:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:56:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "[35m[1mGET /add_agent HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:50] "GET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "GET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:31:52] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:37] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:39] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:40] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:42] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:43] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:32:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:29] "[33mGET /download-file HTTP/1.1[0m" 404 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:35] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:37] "[33mGET /download-file HTTP/1.1[0m" 404 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:18] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:19] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:33:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:44] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:46] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:47] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:50] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:34:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:16] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:38:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:31] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:40:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:15] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:32] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:34] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:43:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:37] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:53] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:44:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:17] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:17] "[31m[1mGET /add HTTP/1.1[0m" 405 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:34] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:45:35] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:07] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:15] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:16] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:16] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:51] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:52] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:46:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:10] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:12] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:47] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:47:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:27] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:29] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:31] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:32] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:41] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:42] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:54:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:01] "[35m[1mGET /rule_manager HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:02] "GET /rule_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:02] "GET /rule_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "GET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "[36mGET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:04] "[36mGET /rule_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:21] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:53] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:54] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:55:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:05] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:15] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:17] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:18] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:19] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 19:56:20] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:04] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:09] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 20:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:06] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:11] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://144.91.66.203:5000
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:23] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:23] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}}
-ERROR:root:Error response from agent: 404
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:33] "[35m[1mPOST /outbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.56'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.1.56'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:08:48] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '0.0.0.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '0.0.0.0'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:03] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': ''}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': ''}}
-ERROR:root:Error response from agent: 500
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:08] "[35m[1mPOST /inbound-rules HTTP/1.1[0m" 500 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.12.7'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '69', 'source_ip': '192.168.12.7'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:09:44] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.26'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:13:33] "POST /outbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.25'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '56', 'destination_ip': '192.168.1.25'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 21:43:19] "POST /outbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:19] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:22] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:32] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:54] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:56] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:06:56] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:56] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:08:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:00] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:40] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:41] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:10:54] "GET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:15] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:16] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:12:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:19] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:36] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:37] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:38] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:13:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:14:59] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:14:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:17] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:17] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:18] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:15:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:06] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:06] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:07] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:14] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:14] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:15] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:41] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:41] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:42] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:16:47] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:21:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:25] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:23:29] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[35m[1mGET /add HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:24:20] "[36mGET /add_agent?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:41] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:48] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:48] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:57] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:25:57] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:05] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:05] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:06] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:06] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:07] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:07] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:18] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:18] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:23] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:25] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:31] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:31] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:55] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:26:55] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:02] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:02] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:03] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:05] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:05] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:10] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:10] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:30] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:30] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:35] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:36] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:27:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:26] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:27] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:37] "[32mPOST /add HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:37] "[31m[1mGET /add HTTP/1.1[0m" 400 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:42] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:29:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:08] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:19] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:25] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:26] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:27] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:28] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:30] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:31] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:32] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:33] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [13/Mar/2024 22:33:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:45] "GET /download-file HTTP/1.1" 200 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:52] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:53] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:57:54] "[36mGET /download-file HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:33] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:34] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:46] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:47] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:58:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:03] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:04] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:20] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:21] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:29] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:30] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:50] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:51] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 14:59:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5070
+ * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 123-940-552
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:28] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:28] "GET /static/styles.css HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:31] "GET /static/1316137.jpeg HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:__main__:Selected agent is http://144.91.66.203:5000
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:42] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:29:42] "GET / HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '66', 'source_ip': '0.0.0.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '66', 'source_ip': '0.0.0.0'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:00] "POST /inbound-rules HTTP/1.1" 200 -
-INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '70', 'destination_ip': '0.0.0.0'}
-INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
-INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '70', 'destination_ip': '0.0.0.0'}}
-INFO:root:Response from agent: {'status': 'success'}
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:16] "POST /outbound-rules HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:18] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:20] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:23] "POST /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:25] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:26] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:28] "[33mGET /flush_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:31] "[33mGET /show_rules HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:34] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:39] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [15/Mar/2024 16:30:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
-INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:40] "GET /download_agent HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:41] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:46] "GET /static/1316137.jpeg HTTP/1.1" 200 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:59] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:11:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:12:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:12:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:13:05] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:13:05] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:13:06] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:13:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 16:13:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

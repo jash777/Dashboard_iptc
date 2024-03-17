@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container mt-5">
+        <div class="center">
+            <h2> Download the agent  </h2><br><br>
+            <center> <button id="centerDownloadBtn" class="btn btn-primary"> Download </button><br/><br> </center>
+        </div>
+    
+
+
+        <div class="github-link mt-3">
+            <div class="input-group">
+                <input type="text" class="form-control" id="githubLink" value="https://github.com/jash777/agnet_code.git" readonly>
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button" id="copyButton">Copy Link</button>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function() {
+            var githubLink = document.getElementById('githubLink').value;
+            navigator.clipboard.writeText(githubLink).then(function() {
+                document.getElementById('copyButton').innerText = 'Copied!';
+                setTimeout(function() {
+                    document.getElementById('copyButton').innerText = 'Copy Link';
+                }, 2000); // Reset button text after 2 seconds
+            }).catch(function() {
+                alert('Failed to copy link');
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('centerDownloadBtn').addEventListener('click', function() {
+            window.location.href = '/download-file';
+        });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

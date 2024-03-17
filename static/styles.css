@@ -89,15 +89,28 @@ h1, h2, h3, h4, h5, h6 {
     color: white;/* Heading text color */
     position: relative;
     text-align: center;
+    background-color: transparent;
 }
-tr ,td ,th {
+tr ,th {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     position: relative;
     text-align: center;
-    background-color: transparent;
-        
+    background: transparent;
+    color:rgba(255, 255, 255, 0.733);   
 }
+
+td{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    color:white;   
+
+}
+
+
 
 /* Paragraph Styles */
 p {
@@ -107,6 +120,15 @@ p {
     color: #ccc; /* Paragraph text color */
 }
 
+#flushButton{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+#showButton{
+    margin-left: 40%;
+    margin-top: 10%;
+
+}
 /* Button Styles */
 .btn-primary {
     background-color: rgba(44, 82, 130, 0.8) !important; /* Semi-transparent darker shade */
