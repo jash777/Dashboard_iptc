@@ -1,36 +1,257 @@
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:23] "GET /add_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '33', 'source_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '33', 'source_ip': '0.0.0.0'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:16:43] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:13] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:14] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:26] "GET /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:15] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:41] "GET /flush_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:44] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:47] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:31] "POST /block_port HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "GET /rule_manager HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:33] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:17:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:27] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:29] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:35] "GET /download_agent HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:30] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:33] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:40] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:__main__:Selected agent is http://144.91.66.203:5000
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:34] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:35] "GET / HTTP/1.1" 200 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '23', 'source_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '23', 'source_ip': '0.0.0.0'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:42] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:43] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-INFO:werkzeug:127.0.0.1 - - [17/Mar/2024 17:26:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:26:45] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:13] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:15] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:16] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:17] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:19] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:25] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '99', 'destination_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'outbound_rule': {'protocol': 'tcp', 'port': '99', 'destination_ip': '0.0.0.0'}}
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:33] "POST /outbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:34] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:35] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:36] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:44] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 09:29:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:7000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+ERROR:root:Error occurred: ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7ee071390b21429a38db3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:02:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:02:54] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:04:20] "GET /static/1316137.jpeg HTTP/1.1" 200 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:04:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:04:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7ee071390b21429a38db3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:05:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:05:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:05:51] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:05:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:05:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: No replica set members match selector "Primary()", Timeout: 30s, Topology Description: <TopologyDescription id: 65f7ee071390b21429a38db3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03099999999994907>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:06:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:06:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:08:00] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:08:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:08:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: No replica set members match selector "Primary()", Timeout: 30s, Topology Description: <TopologyDescription id: 65f7ee071390b21429a38db3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03099999999994907>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:06] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:09] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:10] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:32] "[35m[1mGET /show_rules HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: No replica set members match selector "Primary()", Timeout: 30s, Topology Description: <TopologyDescription id: 65f7ee071390b21429a38db3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.03099999999994907>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:46] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:09:46] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:7000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+ERROR:root:Error occurred: ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7f01b879811da8ab20d35, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:11:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:11:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:11:49] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:11:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:11:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7f01b879811da8ab20d35, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:12:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:12:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:12:28] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:12:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:12:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7f01b879811da8ab20d35, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:13:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:13:38] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:13:59] "GET /static/1316137.jpeg HTTP/1.1" 200 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:13:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR:root:Error occurred: ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f7f01b879811da8ab20d35, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-00.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-01.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('ac-dackndo-shard-00-02.wnz5mjp.mongodb.net:27017: timed out (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:15:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:15:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:15:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:__main__:Selected agent is http://144.91.66.203:5000
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:22] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:22] "GET / HTTP/1.1" 200 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:54] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:16:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:__main__:Selected agent is http://144.91.66.203:5000
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:01] "[32mPOST /select_agent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:04] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:__main__:Received inbound rule data: {'protocol': 'tcp', 'port': '33', 'source_ip': '0.0.0.0'}
+INFO:__main__:Sending request to AGENT_URL: http://144.91.66.203:5000
+INFO:__main__:Request payload: {'inbound_rule': {'protocol': 'tcp', 'port': '33', 'source_ip': '0.0.0.0'}}
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:16] "[35m[1mGET /show_rules HTTP/1.1[0m" 500 -
+INFO:root:Response from agent: {'status': 'success'}
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:22] "POST /inbound-rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:24] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:24] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:24] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:25] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:26] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:29] "GET /rule_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:17:33] "GET /show_rules HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:19:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:19:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:19:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:20:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:20:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2024 13:20:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 INFO:werkzeug: * Detected change in 'J:\\Alphasec\\agent_manager.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\rules.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\get_available_agents.py', reloading
 INFO:werkzeug: * Restarting with stat

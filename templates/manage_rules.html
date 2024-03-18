@@ -5,69 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manage IPTables</title>
   <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <style>
 
+  </style>
 </head>
 <body>
-    {% include 'navbar.html' %}
+  {% include 'navbar.html' %}
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6 text-left">
-      <button id="flushButton"  class="btn btn-danger">Flush IPTables Rules</button>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <button id="flushButton" class="btn btn-danger">Flush IPTables Rules</button>
+      </div>
+      <div class="col-md-6">
+        <button id="showButton" class="btn btn-primary">Show IPTables Rules</button>
+      </div>
     </div>
-    <div class="col-md-6">
-      <button id="showButton" class="btn btn-primary">Show IPTables Rules</button>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="response-container">
+          <h4>Response:</h4><br>
+          <div id="responseTableContainer" class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Protocol</th>
+                  <th>Source </th>
+                  <th>Destination IP</th>
+                  <th>Dst</th>
+                  <th>Port</th>
+                  <th>Port</th>
+                  <th>Action</th>
+
+
+                  <!-- Add more headers as needed -->
+                </tr>
+              </thead>
+              <tbody id="responseTableBody">
+                <!-- Response data will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div id="responseText" class="response-text"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row mt-3">
-    <div class="col-md-12">
-      <h4>Response:</h4>
-      <pre id="responseText"></pre>
-    </div>
-  </div>
-</div>
 
-<!-- Bootstrap JS and jQuery (required for AJAX) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS and jQuery (required for AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-  $(document).ready(function(){
-    // Flush IPTables Rules
-    $('#flushButton').click(function(){
-      $.ajax({
-        type: 'GET',
-        url: '/flush_rules', // Replace with actual route for flushing rules
-        success: function(response){
-          $('#responseText').text(response);
-        },
-        error: function(xhr, status, error){
-          $('#responseText').text('Error: ' + xhr.responseText);
-        }
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      // Flush IPTables Rules
+      $('#flushButton').click(function () {
+        $.ajax({
+          type: 'GET',
+          url: '/flush_rules', // Replace with actual route for flushing rules
+          success: function (response) {
+            $('#responseTableContainer').hide();
+            $('#responseText').text(response).show();
+          },
+          error: function (xhr, status, error) {
+            $('#responseText').text('Error: ' + xhr.responseText).show();
+          }
+        });
       });
-    });
-
-    // Show IPTables Rules
-    $('#showButton').click(function(){
-      $.ajax({
-        type: 'GET',
-        url: '/show_rules', // Replace with actual route for showing rules
-        success: function(response){
-          $('#responseText').text(response);
-        },
-        error: function(xhr, status, error){
-          $('#responseText').text('Error: ' + xhr.responseText);
-        }
+  
+      // Show IPTables Rules
+      $('#showButton').click(function () {
+        $.ajax({
+          type: 'GET',
+          url: '/show_rules', // Replace with actual route for showing rules
+          success: function (response) {
+            $('#responseText').hide();
+            renderTable(response);
+            $('#responseTableContainer').show();
+          },
+          error: function (xhr, status, error) {
+            $('#responseText').text('Error: ' + xhr.responseText).show();
+            $('#responseTableContainer').hide();
+          }
+        });
       });
+  
+      function renderTable(data) {
+        var tableBody = $('#responseTableBody');
+        tableBody.empty(); // Clear previous data
+  
+        // Split the response by lines and process each rule
+        var rules = data.split('\n');
+        rules.forEach(function (rule) {
+          // Split each rule into components (Chain, Target, Protocol, Port, etc.)
+          var components = rule.split(/\s+/);
+          var row = '<tr>';
+          components.forEach(function (component) {
+            row += '<td>' + component + '</td>';
+          });
+          row += '</tr>';
+          tableBody.append(row);
+        });
+      }
     });
-  });
-</script>
+  </script>
+  
 
 </body>
 </html>

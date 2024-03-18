@@ -22,14 +22,14 @@ logger = logging.getLogger(__name__)
 @app.route('/')
 def index():
     try:
-        agent_ips, agent_names = get_agent_ips_and_names()  # This function should return agent IPs and names
+        agent_ips, agent_names = get_agent_ips_and_names() 
         agent_options = ['{} - {}'.format(ip, name) for ip, name in zip(agent_ips, agent_names)]
         return render_template('index.html', agent_options=agent_options, predefined_rules=predefined_rules_list)
     except Exception as e:
         logger.error("An error occurred: %s", str(e))
         return "An error occurred while loading the page."
     
-
+# agent selection function
 @app.route('/select_agent', methods=['POST'])
 def select_agent():
     try:
@@ -51,26 +51,23 @@ def select_agent():
         logger.error("An error occurred while selecting agent: %s", str(e))
         return "An error occurred while selecting agent."
 
-
+#inbound rule function
 @app.route('/inbound-rules', methods=['POST'])
 def apply_inbound_rule():
     try:
         inbound_rule = request.json.get('inbound_rule')
-        logger.info("Received inbound rule data: %s", inbound_rule)  # Log the received data
+        logger.info("Received inbound rule data: %s", inbound_rule)  # Log 
         
         if inbound_rule:
-            # Log the content of the request being sent to AGENT_URL
+            # Log AGENT_URL
             logger.info("Sending request to AGENT_URL: %s", session.get("AGENT_URL"))
             logger.info("Request payload: %s", request.json)
-            
             response = requests.post(f'{session.get("AGENT_URL")}/inbound_rule', json={'inbound_rule': inbound_rule})
-            # Log the response content or status code
+            # Log the response
             if response.status_code == 200:
                 logging.info("Response from agent: %s", response.json())
             else:
                 logging.error("Error response from agent: %s", response.status_code)
-            
-            # Return appropriate response to the client
             if response.status_code == 200:
                 return jsonify({'message': 'Inbound rule applied successfully to the agent'}), 200
             else:
@@ -83,7 +80,8 @@ def apply_inbound_rule():
     except Exception as e:
         logger.error("An unexpected error occurred while applying inbound rule: %s", str(e))
         return jsonify({'error': 'An unexpected error occurred'}), 500
-
+    
+#OutBound Function
 @app.route('/outbound-rules', methods=['POST'])
 def apply_outbound_rule():
     try:
@@ -91,18 +89,15 @@ def apply_outbound_rule():
         logger.info("Received inbound rule data: %s", outbound_rule)  # Log the received data
         
         if outbound_rule:
-            # Log the content of the request being sent to AGENT_URL
+            # Log AGENT_URL
             logger.info("Sending request to AGENT_URL: %s", session.get("AGENT_URL"))
             logger.info("Request payload: %s", request.json)
-            
             response = requests.post(f'{session.get("AGENT_URL")}/outbound_rule', json={'outbound_rule': outbound_rule})
-            # Log the response content or status code
+            # Log  response 
             if response.status_code == 200:
                 logging.info("Response from agent: %s", response.json())
             else:
                 logging.error("Error response from agent: %s", response.status_code)
-            
-            # Return appropriate response to the client
             if response.status_code == 200:
                 return jsonify({'message': 'Inbound rule applied successfully to the agent'}), 200
             else:
@@ -115,7 +110,8 @@ def apply_outbound_rule():
     except Exception as e:
         logger.error("An unexpected error occurred while applying inbound rule: %s", str(e))
         return jsonify({'error': 'An unexpected error occurred'}), 500
-
+    
+#Bloack Port separate function
 @app.route('/block_port', methods=['GET', 'POST'])
 def block_port():
     if request.method == 'POST':
@@ -142,6 +138,7 @@ def add_ageents():
     agents = agents_collections.find()
     return render_template('add_agent.html', agents=agents)
 
+# add agent function
 @app.route('/add', methods=['POST','GET'])
 def add_agent():
     try:
@@ -151,10 +148,9 @@ def add_agent():
         ip_address = request.form.get('ip_address')
         
         if agent_id is None or agent_name is None or status is None or ip_address is None:
-            # Handle case where required fields are missing
+
             return 'Missing required fields', 400
         
-        # Add the new field to the document
         agents_collections.insert_one({'agent_id': agent_id, 'agent_name': agent_name, 'status': status, 'ip_address': ip_address})
         
         return redirect(url_for('add_agent'))
@@ -171,38 +167,50 @@ def handle_error(e):
 def rule_manager():
     return render_template('manage_rules.html')
 
-
+#agent downloader 
 @app.route('/download_agent',methods=['POST','GET'])
 def download_agent():
     return  render_template("download_agent.html")
 
-@app.route('/download-file')
-def download_file():
-    try:
-        # Path to the zip file you want to serve for download
-        zip_file_path = './agent_file/agent.tar'
+# @app.route('/download-file')
+# def download_file():
+#     try:
+#         zip_file_path = './agent_file/agent.tar'
+#         if not os.path.isfile(zip_file_path):
+#             return "The requested file does not exist.", 404
+#         filename = 'agent.tar'
+#         response = make_response(send_file(zip_file_path, as_attachment=True))
+#         response.headers['Content-Type'] = 'application/octet-stream'
+#         response.headers['Content-Disposition'] = f'attachment; filename="{filename}"'
+#         return response
+#     except Exception as e:
+#         logging.error(f"An error occurred while downloading the file: {str(e)}")
+#         return "An error occurred while downloading the file. Please try again later.", 500
 
-        # Check if the file exists
-        if not os.path.isfile(zip_file_path):
-            return "The requested file does not exist.", 404
+#flush rules function
+@app.route('/flush_rules', methods=['GET','POST'])
+def flush_rules():
+    if 'AGENT_URL' in session:
+        try:
+            response = requests.post(f'{session.get("AGENT_URL")}/flush')
+            return response.text, response.status_code
+        except requests.exceptions.RequestException as e:
+            return str(e), 500
+    else:
+        return 'Agent URL not set in session.', 400
 
-        # Provide a filename for the downloaded file (optional)
-        filename = 'agent.tar'
-
-        # Create a Flask response with the file content
-        response = make_response(send_file(zip_file_path, as_attachment=True))
-
-        # Add headers to force download and specify the file type
-        response.headers['Content-Type'] = 'application/octet-stream'
-        response.headers['Content-Disposition'] = f'attachment; filename="{filename}"'
-
-        return response
-
-    except Exception as e:
-        # Log any exceptions that occur
-        logging.error(f"An error occurred while downloading the file: {str(e)}")
-        # Return a custom error response
-        return "An error occurred while downloading the file. Please try again later.", 500
+#show rules function
+@app.route('/show_rules', methods=['GET','POST'])
+def show_rules():
+    if 'AGENT_URL' in session:
+        try:
+            response = requests.get(f'{session.get("AGENT_URL")}/show_rules')
+            return response.text, response.status_code
+        except requests.exceptions.RequestException as e:
+            return str(e), 500
+    else:
+        return 'Agent URL not set in session.', 400
+    
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=7000)
