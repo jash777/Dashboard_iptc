@@ -32,8 +32,3 @@ db = client['agents']
 agents_collection = db['agents']
 agents_collections = db['agents_collection']
 db = client['iptables_db']
-<<<<<<< HEAD
-rules_collection = db['rules']  
-=======
-rules_collection = db['rules']   
->>>>>>> 65eb53d13db42ddab6aa8b6fe50798ce1312932e
