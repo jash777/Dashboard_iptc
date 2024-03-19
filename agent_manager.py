@@ -22,14 +22,18 @@ class AgentManager:
     def get_agents(self):
         return [agent['ip'] for agent in self.agents_collection.find()]
 
-username = "alpha"
-password = "Alpha#Jash@777"
+username = "********"
+password = "************"
 encoded_username = quote_plus(username)
 encoded_password = quote_plus(password)
 
-client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@dashboard.wnz5mjp.mongodb.net/")
+client = MongoClient(f"mongodb+srv://{encoded_username}:{encoded_password}@mongodb.server.com")
 db = client['agents']
 agents_collection = db['agents']
 agents_collections = db['agents_collection']
 db = client['iptables_db']
+<<<<<<< HEAD
 rules_collection = db['rules']  
+=======
+rules_collection = db['rules']   
+>>>>>>> 65eb53d13db42ddab6aa8b6fe50798ce1312932e

@@ -686,3 +686,32 @@ INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:11:31] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:11:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:11:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:7000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-169-480
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:37] "[36mGET /static/1316137.jpeg HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "GET /static/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "GET /static/1316137.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:56] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:12:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:13:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:13:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:13:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+ERROR:__main__:An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [19/Mar/2024 16:13:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'J:\\Alphasec\\agent_manager.py', reloading
+INFO:werkzeug: * Restarting with stat
